@@ -1,0 +1,127 @@
+sampleID	pop.group	pop.id	pop	habitat	humidity	light	type	spp
+D97	A	F1	Alnarp_pond	forest	wet	partially shaded	root	Solanum_dulcamara
+D98	A	F1	Alnarp_pond	forest	wet	partially shaded	root	Solanum_dulcamara
+D99	A	F1	Alnarp_pond	forest	wet	partially shaded	root	Solanum_dulcamara
+D100	A	F1	Alnarp_pond	forest	wet	partially shaded	root	Solanum_dulcamara
+D101	A	F1	Alnarp_pond	forest	wet	partially shaded	root	Solanum_dulcamara
+D102	A	F1	Alnarp_pond	forest	wet	partially shaded	root	Solanum_dulcamara
+D103	A	F1	Alnarp_pond	forest	wet	partially shaded	root	Solanum_dulcamara
+D104	A	F1	Alnarp_pond	forest	wet	partially shaded	root	Solanum_dulcamara
+D105	A	F1	Alnarp_pond	forest	wet	partially shaded	root	Lycopus_europaeus
+D106	A	F1	Alnarp_pond	forest	wet	partially shaded	root	Lycopus_europaeus
+D107	B	F2	Habo_Ljung	forest	wet	partially shaded	root	Solanum_dulcamara
+D108	B	F2	Habo_Ljung	forest	wet	partially shaded	root	Solanum_dulcamara
+D109	B	F2	Habo_Ljung	forest	wet	partially shaded	root	Solanum_dulcamara
+D110	B	F2	Habo_Ljung	forest	wet	partially shaded	root	Solanum_dulcamara
+D111	B	F2	Habo_Ljung	forest	wet	partially shaded	root	Solanum_dulcamara
+D112	B	F2	Habo_Ljung	forest	wet	partially shaded	root	Solanum_dulcamara
+D113	B	F2	Habo_Ljung	forest	wet	partially shaded	root	Solanum_dulcamara
+D114	B	F2	Habo_Ljung	forest	wet	partially shaded	root	Solanum_dulcamara
+D115	B	F2	Habo_Ljung	forest	wet	partially shaded	root	Lycopus_europaeus
+D116	B	F2	Habo_Ljung	forest	wet	partially shaded	root	Lycopus_europaeus
+D117	C	U1	Lund	urban	dry	exposed	root	Solanum_dulcamara
+D118	C	U1	Lund	urban	dry	exposed	root	Solanum_dulcamara
+D119	C	U1	Lund	urban	dry	exposed	root	Solanum_dulcamara
+D120	C	U1	Lund	urban	dry	exposed	root	Solanum_dulcamara
+D121	C	U1	Lund	urban	dry	exposed	root	Solanum_dulcamara
+D122	C	U1	Lund	urban	dry	exposed	root	Solanum_dulcamara
+D123	C	U1	Lund	urban	dry	exposed	root	Solanum_dulcamara
+D124	C	U1	Lund	urban	dry	exposed	root	Solanum_dulcamara
+D125	C	U1	Lund	urban	dry	exposed	root	Plantago_lanceolata
+D126	C	U1	Lund	urban	dry	exposed	root	Plantago_lanceolata
+D127	D	R1	Borgeby	rural	wet	exposed	root	Solanum_dulcamara
+D128	D	R1	Borgeby	rural	wet	exposed	root	Solanum_dulcamara
+D129	D	R1	Borgeby	rural	wet	exposed	root	Solanum_dulcamara
+D130	D	R1	Borgeby	rural	wet	exposed	root	Solanum_dulcamara
+D131	D	R1	Borgeby	rural	wet	exposed	root	Solanum_dulcamara
+D132	D	R1	Borgeby	rural	wet	exposed	root	Solanum_dulcamara
+D133	D	R1	Borgeby	rural	wet	exposed	root	Solanum_dulcamara
+D134	D	R1	Borgeby	rural	wet	exposed	root	Solanum_dulcamara
+D135	D	R1	Borgeby	rural	wet	exposed	root	Lysimachia_vulgaris
+D136	D	R1	Borgeby	rural	wet	exposed	root	Lysimachia_vulgaris
+D137	E	B2	Kämpinge	beach	dry	exposed	root	Solanum_dulcamara
+D138	E	B2	Kämpinge	beach	dry	exposed	root	Solanum_dulcamara
+D139	E	B2	Kämpinge	beach	dry	exposed	root	Solanum_dulcamara
+D140	E	B2	Kämpinge	beach	dry	exposed	root	Solanum_dulcamara
+D141	E	B2	Kämpinge	beach	dry	exposed	root	Solanum_dulcamara
+D142	E	B2	Kämpinge	beach	dry	exposed	root	Solanum_dulcamara
+D143	E	B2	Kämpinge	beach	dry	exposed	root	Solanum_dulcamara
+D144	E	B2	Kämpinge	beach	dry	exposed	root	Solanum_dulcamara
+D145	E	B2	Kämpinge	beach	dry	exposed	root	Solanum_dulcamara
+D146	E	B2	Kämpinge	beach	dry	exposed	root	Artemisia_vulgaris
+D147	E	B2	Kämpinge	beach	dry	exposed	root	Artemisia_vulgaris
+D148	F	B1	Lomma_beach	beach	dry	exposed	root	Solanum_dulcamara
+D149	F	B1	Lomma_beach	beach	dry	exposed	root	Solanum_dulcamara
+D150	F	B1	Lomma_beach	beach	dry	exposed	root	Solanum_dulcamara
+D151	F	B1	Lomma_beach	beach	dry	exposed	root	Solanum_dulcamara
+D152	F	B1	Lomma_beach	beach	dry	exposed	root	Solanum_dulcamara
+D153	F	B1	Lomma_beach	beach	dry	exposed	root	Solanum_dulcamara
+D154	F	B1	Lomma_beach	beach	dry	exposed	root	Solanum_dulcamara
+D155	F	B1	Lomma_beach	beach	dry	exposed	root	Solanum_dulcamara
+D156	F	B1	Lomma_beach	beach	dry	exposed	root	Solanum_dulcamara
+D157	F	B1	Lomma_beach	beach	dry	exposed	root	Artemisia_vulgaris
+D158	F	B1	Lomma_beach	beach	dry	exposed	root	Artemisia_vulgaris
+D159	G	R2	Tvedöra	rural	wet	exposed	root	Solanum_dulcamara
+D160	G	R2	Tvedöra	rural	wet	exposed	root	Solanum_dulcamara
+D161	G	R2	Tvedöra	rural	wet	exposed	root	Solanum_dulcamara
+D162	G	R2	Tvedöra	rural	wet	exposed	root	Solanum_dulcamara
+D163	G	R2	Tvedöra	rural	wet	exposed	root	Solanum_dulcamara
+D164	G	R2	Tvedöra	rural	wet	exposed	root	Solanum_dulcamara
+D165	G	R2	Tvedöra	rural	wet	exposed	root	Solanum_dulcamara
+D166	G	R2	Tvedöra	rural	wet	exposed	root	Solanum_dulcamara
+D167	G	R2	Tvedöra	rural	wet	exposed	root	Solanum_dulcamara
+D168	G	R2	Tvedöra	rural	wet	exposed	root	Lysimachia_vulgaris
+D169	G	R2	Tvedöra	rural	wet	exposed	root	Lysimachia_vulgaris
+D170	H	U2	Malmö	urban	dry	exposed	root	Solanum_dulcamara
+D171	H	U2	Malmö	urban	dry	exposed	root	Solanum_dulcamara
+D172	H	U2	Malmö	urban	dry	exposed	root	Solanum_dulcamara
+D173	H	U2	Malmö	urban	dry	exposed	root	Solanum_dulcamara
+D174	H	U2	Malmö	urban	dry	exposed	root	Solanum_dulcamara
+D175	H	U2	Malmö	urban	dry	exposed	root	Solanum_dulcamara
+D176	H	U2	Malmö	urban	dry	exposed	root	Solanum_dulcamara
+D177	H	U2	Malmö	urban	dry	exposed	root	Solanum_dulcamara
+D178	H	U2	Malmö	urban	dry	exposed	root	Solanum_dulcamara
+D179	H	U2	Malmö	urban	dry	exposed	root	Artemisia_vulgaris
+D180	H	U2	Malmö	urban	dry	exposed	root	Artemisia_vulgaris
+D193	A	F1	Alnarp_pond	forest	wet	partially shaded	root	Solanum_dulcamara
+D194	A	F1	Alnarp_pond	forest	wet	partially shaded	root	Solanum_dulcamara
+D195	A	F1	Alnarp_pond	forest	wet	partially shaded	root	Solanum_dulcamara
+D196	A	F1	Alnarp_pond	forest	wet	partially shaded	root	Solanum_dulcamara
+D197	A	F1	Alnarp_pond	forest	wet	partially shaded	root	Lycopus_europaeus
+D198	A	F1	Alnarp_pond	forest	wet	partially shaded	root	Lycopus_europaeus
+D199	B	F2	Habo_Ljung	forest	wet	partially shaded	root	Solanum_dulcamara
+D200	B	F2	Habo_Ljung	forest	wet	partially shaded	root	Solanum_dulcamara
+D201	B	F2	Habo_Ljung	forest	wet	partially shaded	root	Solanum_dulcamara
+D202	B	F2	Habo_Ljung	forest	wet	partially shaded	root	Solanum_dulcamara
+D203	B	F2	Habo_Ljung	forest	wet	partially shaded	root	Lycopus_europaeus
+D204	B	F2	Habo_Ljung	forest	wet	partially shaded	root	Lycopus_europaeus
+D205	C	U1	Lund	urban	dry	exposed	root	Solanum_dulcamara
+D206	C	U1	Lund	urban	dry	exposed	root	Solanum_dulcamara
+D207	C	U1	Lund	urban	dry	exposed	root	Solanum_dulcamara
+D208	C	U1	Lund	urban	dry	exposed	root	Solanum_dulcamara
+D209	C	U1	Lund	urban	dry	exposed	root	Artemisia_vulgaris
+D210	C	U1	Lund	urban	dry	exposed	root	Artemisia_vulgaris
+D211	D	R1	Borgeby	rural	wet	exposed	root	Solanum_dulcamara
+D212	D	R1	Borgeby	rural	wet	exposed	root	Solanum_dulcamara
+D213	D	R1	Borgeby	rural	wet	exposed	root	Solanum_dulcamara
+D214	D	R1	Borgeby	rural	wet	exposed	root	Solanum_dulcamara
+D215	D	R1	Borgeby	rural	wet	exposed	root	Lysimachia_vulgaris
+D216	D	R1	Borgeby	rural	wet	exposed	root	Lysimachia_vulgaris
+D217	E	B2	Kämpinge	beach	dry	exposed	root	Solanum_dulcamara
+D218	E	B2	Kämpinge	beach	dry	exposed	root	Solanum_dulcamara
+D219	E	B2	Kämpinge	beach	dry	exposed	root	Solanum_dulcamara
+D220	E	B2	Kämpinge	beach	dry	exposed	root	Artemisia_vulgaris
+D221	E	B2	Kämpinge	beach	dry	exposed	root	Artemisia_vulgaris
+D222	F	B1	Lomma_beach	beach	dry	exposed	root	Solanum_dulcamara
+D223	F	B1	Lomma_beach	beach	dry	exposed	root	Solanum_dulcamara
+D224	F	B1	Lomma_beach	beach	dry	exposed	root	Solanum_dulcamara
+D225	F	B1	Lomma_beach	beach	dry	exposed	root	Artemisia_vulgaris
+D226	F	B1	Lomma_beach	beach	dry	exposed	root	Artemisia_vulgaris
+D227	G	R2	Tvedöra	rural	wet	exposed	root	Solanum_dulcamara
+D228	G	R2	Tvedöra	rural	wet	exposed	root	Solanum_dulcamara
+D229	G	R2	Tvedöra	rural	wet	exposed	root	Solanum_dulcamara
+D230	G	R2	Tvedöra	rural	wet	exposed	root	Lysimachia_vulgaris
+D231	G	R2	Tvedöra	rural	wet	exposed	root	Lysimachia_vulgaris
+D232	H	U2	Malmö	urban	dry	exposed	root	Solanum_dulcamara
+D233	H	U2	Malmö	urban	dry	exposed	root	Artemisia_vulgaris
+D234	H	U2	Malmö	urban	dry	exposed	root	Artemisia_vulgaris

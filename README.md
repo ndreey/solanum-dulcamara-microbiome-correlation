@@ -84,7 +84,75 @@ sbatch scripts/runPiawka.sh vcfs/final.merged.vcf.gz
 ```
 
 ### 9. Microbiome Analysis (TBA)
-Process amplicon data and correlate with host genetics.
+Process amplicon data and correlate with host genetics and distances.
+Used R packages:
+```
+tidyverse  2.0.0
+vegan  2.8-0
+scales  1.4.0
+ggpubr  0.6.2 
+ggridges 0.5.7
+patchwork  1.3.2
+writexl  1.5.4
+```
+Run these scripts within Rstudio:
+- `01-mantel.R`: This will create multiple plots such as ridge plots, scatter plots to better visualize the mean Bray-Curtis data.
+- `02-master-data-frame.R`: This will create a list where each element is a dataframe for each taxonomic level. Holding FST, km.diff, and mean Bray-Curtis distances between each pairwise comparison.
+
+_example_
+```
+> master_frames
+$Phylum
+# A tibble: 64 × 8
+   pair  pop1.id pop2.id   fst mean_bray.AMF mean_bray.ITS mean_bray.16S km.diff
+   <chr> <chr>   <chr>   <dbl>         <dbl>         <dbl>         <dbl>   <dbl>
+ 1 B1-B1 B1      B1      0                 0        0.0637         0.191     0  
+ 2 B1-B2 B1      B2      0.258             0        0.0784         0.230    31.2
+ 3 B1-F1 B1      F1      0.544             0        0.114          0.250     1.9
+ 4 B1-F2 B1      F2      0.261             0        0.0811         0.201     2.3
+ 5 B1-R1 B1      R1      0.602             0        0.0850         0.345     9.2
+ 6 B1-R2 B1      R2      0.479             0        0.0759         0.201    24.2
+ 7 B1-U1 B1      U1      0.402             0        0.0615         0.183    10.2
+ 8 B1-U2 B1      U2      0.409             0        0.0765         0.211    11.9
+ 9 B2-B1 B2      B1      0.258             0        0.0784         0.230    31.2
+10 B2-B2 B2      B2      0                 0        0.0810         0.200     0  
+# ℹ 54 more rows
+# ℹ Use `print(n = ...)` to see more rows
+
+$Class
+# A tibble: 64 × 8
+   pair  pop1.id pop2.id   fst mean_bray.AMF mean_bray.ITS mean_bray.16S km.diff
+   <chr> <chr>   <chr>   <dbl>         <dbl>         <dbl>         <dbl>   <dbl>
+ 1 B1-B1 B1      B1      0            0.0389         0.328         0.240     0  
+ 2 B1-B2 B1      B2      0.258        0.0505         0.363         0.268    31.2
+ 3 B1-F1 B1      F1      0.544        0.0366         0.357         0.332     1.9
+ 4 B1-F2 B1      F2      0.261        0.0377         0.305         0.272     2.3
+ 5 B1-R1 B1      R1      0.602        0.0493         0.318         0.437     9.2
+ 6 B1-R2 B1      R2      0.479        0.0641         0.291         0.268    24.2
+ 7 B1-U1 B1      U1      0.402        0.0533         0.371         0.251    10.2
+ 8 B1-U2 B1      U2      0.409        0.0446         0.345         0.264    11.9
+ 9 B2-B1 B2      B1      0.258        0.0505         0.363         0.268    31.2
+10 B2-B2 B2      B2      0            0.0490         0.304         0.235     0  
+# ℹ 54 more rows
+# ℹ Use `print(n = ...)` to see more rows
+
+$Order
+# A tibble: 64 × 8
+   pair  pop1.id pop2.id   fst mean_bray.AMF mean_bray.ITS mean_bray.16S km.diff
+   <chr> <chr>   <chr>   <dbl>         <dbl>         <dbl>         <dbl>   <dbl>
+ 1 B1-B1 B1      B1      0             0.237         0.488         0.375     0  
+ 2 B1-B2 B1      B2      0.258         0.344         0.545         0.416    31.2
+ 3 B1-F1 B1      F1      0.544         0.403         0.543         0.493     1.9
+ 4 B1-F2 B1      F2      0.261         0.411         0.495         0.450     2.3
+ 5 B1-R1 B1      R1      0.602         0.387         0.515         0.587     9.2
+ 6 B1-R2 B1      R2      0.479         0.502         0.456         0.438    24.2
+ 7 B1-U1 B1      U1      0.402         0.356         0.570         0.419    10.2
+ 8 B1-U2 B1      U2      0.409         0.301         0.481         0.413    11.9
+ 9 B2-B1 B2      B1      0.258         0.344         0.545         0.416    31.2
+10 B2-B2 B2      B2      0             0.202         0.411         0.350     0  
+# ℹ 54 more rows
+# ℹ Use `print(n = ...)` to see more rows
+```
 
 ## Main Tools
 mamba environments in .yml files can be found in `mamba_environments/`. 

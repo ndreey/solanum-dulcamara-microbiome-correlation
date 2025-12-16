@@ -8,4 +8,7 @@ original_vcfs/
 stats/
 processDADA2/amplicon_*
 processDADA2/tax/
+05-mantel-overview/
+data/
+*.xlsx
 

@@ -1,0 +1,9 @@
+pop	short.id	pop.id	habitat	humidity
+Alnarp_pond	AL	F1	forest	wet
+Borgeby	BO	R1	rural	wet
+Lund	LU	U1	urban	dry
+Kämpinge	KA	B2	beach	dry
+Malmö	LI	U2	urban	dry
+Habo_Ljung	LO	F2	forest	wet
+Lomma_beach	LOB	B1	beach	dry
+Tvedöra	TV	R2	rural	wet
