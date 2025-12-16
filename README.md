@@ -171,6 +171,32 @@ mamba environments in .yml files can be found in `mamba_environments/`.
 For this, one will have to move the cwd to the `processDADA2/` directory
 and run scripts from there.
 
+## Repo size
+Note: `processDADA2` contains sequence data and is compressed. Original data ~50GB
+```
+du -sh .
+14G     .
+
+du -sh *
+204K    01-pruneLD
+1.6M    02-PCA
+4.9M    03-ADMIXTURE
+16K     04-piawka
+134M    05-mantel-overview
+24K     README.md
+6.6M    data
+1.4M    doc
+8.0K    fst_dxy_matrix.xlsx
+20K     mamba_environments
+250M    original_vcfs
+56K     plots
+11G     processDADA2
+100K    scripts
+14M     slurm-logs
+1.7G    stats
+686M    vcfs
+```
+
 ## File Structure 
 ```
 .
