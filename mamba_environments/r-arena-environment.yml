@@ -1,5 +1,5 @@
 name: 
-  /cfs/klemming/projects/snic/snic2020-6-222/Projects/Tconura/working/Andre/bin/miniforge3/envs/r-arena
+  r-arena
 channels:
   - bioconda
   - conda-forge
