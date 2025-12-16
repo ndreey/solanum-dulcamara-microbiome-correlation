@@ -6,6 +6,15 @@ library(ggridges)
 library(patchwork)
 library(writexl)
 
+# Author: André Bourbonnais
+# email: andbou95@gmail.com
+# Last update: 2025-12-17
+#
+# This script will create "master mantel data-frames" to build upon
+# to make more mantel tests. Easiest, is to use the pop_map to map the
+# pairwise comparison measures.
+#
+
 source("scripts/r-scripts/master-data-frame-functions.R")
 
 set.seed(1337)

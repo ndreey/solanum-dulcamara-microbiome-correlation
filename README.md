@@ -1,6 +1,6 @@
 # Solanum dulcamara Population Genomics and Microbiome Analysis
 
-This project investigates the relationship between host plant population genetics and root-associated microbiome composition in *Solanum dulcamara* across natural populations. Using RADseq data and 16S/ITS amplicon sequencing, we test whether host genetic distance (FST) correlates with microbiome beta-diversity (Bray-Curtis dissimilarity) through Mantel correlation tests. The analysis pipeline includes SNP calling and filtering, population structure analysis (PCA, admixture), calculation of genetic differentiation statistics (FST, nucleotide diversity), and microbiome community profiling using DADA2. We compare bacterial (16S), fungal (ITS), and arbuscular mycorrhizal fungi (AMF) communities across taxonomic levels to determine which microbial groups show the strongest correlation with host genetic structure, providing insights into the eco-evolutionary dynamics of plant-microbiome associations.
+This project investigates the relationship between host plant population genetics and root-associated microbiome composition in *Solanum dulcamara* across natural populations. Using RADseq data and 16S/ITS amplicon sequencing, we test whether host genetic distance (FST) correlates with microbiome beta-diversity (Bray-Curtis dissimilarity) through Mantel correlation tests. The analysis pipeline includes vcf filtering, population structure analysis (PCA, admixture), calculation of population differentiation (FST), nucleotide divergence (Dxy), and microbiome community. We compare bacterial (16S), fungal (ITS), and arbuscular mycorrhizal fungi (AMF) communities across taxonomic levels to determine which microbial groups show the strongest correlation with host genetic structure.
 
 ## Workflow
 
@@ -83,17 +83,19 @@ Maps samples to populations, then calculates pairwise FST, nucleotide diversity 
 sbatch scripts/runPiawka.sh vcfs/final.merged.vcf.gz
 ```
 
-### 9. Microbiome Analysis (TBA)
+### 9. Microbiome Analysis
 Process amplicon data and correlate with host genetics and distances.
 Used R packages:
 ```
-tidyverse  2.0.0
-vegan  2.8-0
-scales  1.4.0
-ggpubr  0.6.2 
-ggridges 0.5.7
-patchwork  1.3.2
-writexl  1.5.4
+tidyverse     2.0.0
+vegan         2.8-0
+scales        1.4.0
+ggpubr        0.6.2 
+ggridges      0.5.7
+patchwork     1.3.2
+writexl       1.5.4
+pheatmap      1.0.13
+paletteer     1.6.0
 ```
 Run these scripts within Rstudio:
 - `01-mantel.R`: This will create multiple plots such as ridge plots, scatter plots to better visualize the mean Bray-Curtis data.
@@ -164,3 +166,7 @@ mamba environments in .yml files can be found in `mamba_environments/`.
 | plink | 2.00a5.14 | dardel_module |
 | r-base | 4.3-4.5.1 | conda-forge |
 | vcftools | 0.1.16 | dardel_module |
+
+## Reproduce DADA2 tables.
+For this, one will have to move the cwd to the `processDADA2/` directory
+and run scripts from there.

@@ -1,9 +1,17 @@
 library(tidyverse)
 
+# Author: André Bourbonnais
+# email: andbou95@gmail.com
+# Last update: 2025-12-17
+#
+# This script holds functions for the 02-master-data-frame.R script.
+# To make the exploration and mantel tests easier.
+#
+
 set.seed(1337)
 
 #### FUNCTIONS #####
-# FUNCTION TO PROCESS EACH DATASET
+# calculates the mean bray-curtis distances 
 get_bray_curtis <- function(abund_matrix, dataset_name, meta_data) {
   
   message(paste("Processing", dataset_name, "..."))
@@ -36,7 +44,8 @@ get_bray_curtis <- function(abund_matrix, dataset_name, meta_data) {
     )
 }
 
-# Function to create distance matrix and run Mantel test
+# Function to create distance matrix and run Mantel test on any of the columns
+# of "df". For example, we can compare mean_bray.AMF vs mean_bray.ITS
 run_mantel <- function(df, measure_y, measure_x) {
   
   y_dist <- df %>% 

@@ -6,6 +6,17 @@ library(ggridges)
 library(patchwork)
 library(writexl)
 
+
+# Author: André Bourbonnais
+# email: andbou95@gmail.com
+# Last update: 2025-12-17
+#
+# This scripts plots and summarizes most of the data to make comparisons.
+# Showing distributions of the Bray-Curtis measurments, and plotting 
+# results together.
+#
+
+
 #### FUNCTIONS #####
 # FUNCTION TO PROCESS EACH DATASET
 process_bray_curtis <- function(abund_matrix, dataset_name, meta_data) {
