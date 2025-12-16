@@ -75,6 +75,25 @@ Create final VCF with both variant and invariant sites to be pixy/piawka complia
 ```bash
 sbatch scripts/mergeInvariants.sh
 ```
+#### VCFs of Importance
+```
+VCF                             	 samples	 records 	 invariants	 SNPs 	 indels	 others
+# For population genomics	
+final.merged.vcf.gz             	      93	 18056199	   18035778	 20421	      0	      0	
+
+# Newly created with updated filtering
+new.filt.final.vcf.gz           	      93	    20421	          0	 20421	      0	      0	
+
+# Past final version
+pe_pop3_filt.annotated.vcf.gz   	      96	      174	          0	   174	      0	      0	
+
+# Raw VCF with only biallelic snps 
+pe_pop3.annotated.vcf.gz        	      96	    98825	          0	 98825	      0	      0	
+
+# Raw VCF with biallelic snps + invariants
+populations.all.annotated.vcf.gz	      96	 18134603	   18035778	 98825	      0	      0	
+
+```
 
 ### 8. Population Genetics Statistics
 Maps samples to populations, then calculates pairwise FST, nucleotide diversity (π), and Dxy statistics using piawka with a maximum of 30% missing data per site per population group. The arguments it takes is path/to/vcf.
