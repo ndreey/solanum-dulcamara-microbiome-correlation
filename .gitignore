@@ -1,0 +1,11 @@
+slurm-logs/
+vcfs/
+original_vcfs/
+01-pruneLD/
+02-PCA/
+03-ADMIXTURE/
+04-piawka/
+stats/
+processDADA2/amplicon_*
+processDADA2/tax/
+
