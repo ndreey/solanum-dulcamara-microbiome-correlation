@@ -12,9 +12,11 @@
 #SBATCH --mail-user=andbou95@gmail.com
 #SBATCH --mail-type=ALL
 
-# Load in the r-arena mamba environment
+# Load in the mamba environment
 source /cfs/klemming/home/a/andbou/.bashrc
-mamba activate vcf
+mamba activate piawka
+
+module load bcftools/1.20
 
 # Arguments
 CPU=8

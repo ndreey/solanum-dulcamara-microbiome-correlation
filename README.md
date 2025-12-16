@@ -85,3 +85,14 @@ sbatch scripts/runPiawka.sh vcfs/final.merged.vcf.gz
 
 ### 9. Microbiome Analysis (TBA)
 Process amplicon data and correlate with host genetics.
+
+## Main Tools
+mamba environments in .yml files can be found in `mamba_environments/`. 
+| Name | Version | Channel |
+|------|---------|---------|
+| ADMIXTURE | 1.3.0 | dardel_module |
+| bcftools | 1.20 | dardel_module/bioconda |
+| piawka | 0.8.11 | bioconda |
+| plink | 2.00a5.14 | dardel_module |
+| r-base | 4.3-4.5.1 | conda-forge |
+| vcftools | 0.1.16 | dardel_module |
