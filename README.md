@@ -121,8 +121,7 @@ Run these scripts within Rstudio:
 - `02-master-data-frame.R`: This will create a list where each element is a dataframe for each taxonomic level. Holding FST, km.diff, and mean Bray-Curtis distances between each pairwise comparison.
 
 ## Working with the Data Frames
-In `02-master-data-frame.R` there are two R objects of importance: `master_frames` and `df_all`
-_example_
+In `02-master-data-frame.R` there are two R objects of importance: `master_frames` and `df_all`.
 
 ```R
 # All mantel dataframes stored in list at their taxonomic level.

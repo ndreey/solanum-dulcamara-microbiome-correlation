@@ -216,9 +216,9 @@ ggplot(df_plot, aes(x = fst, y = km.diff)) +
   theme_pubr()
 
 # Run Mantel tests
-mantel_fam <- run_mantel(df_family, "mean_bray.16S", "fst")
-cat("Mantel r =", mantel_fam$r, "\n")
-cat("p-value =", mantel_fam$p, "\n")
+mantel_order <- run_mantel(df_order, "mean_bray.16S", "fst")
+cat("Mantel r =", mantel_order$r, "\n")
+cat("p-value =", mantel_order$p, "\n")
   
 # Summarize across beta-div. 
 beta_div <- c("mean_bray.16S", "mean_bray.ITS", "mean_bray.AMF")
