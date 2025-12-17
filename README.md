@@ -334,7 +334,8 @@ du -sh *
 ```
 
 ## File Structure 
-```
+```bash
+tree . | grep -v "SLURM-"
 .
 ├── 01-pruneLD
 │   └── new.filt.final-50-10-0.2
@@ -512,12 +513,15 @@ du -sh *
 │   │   ├── Order_abund.csv
 │   │   ├── Phylum_abund.csv
 │   │   └── Species_abund.csv
+│   ├── mantel_all_taxa.Rds
+│   ├── mantel_all_taxa.csv
 │   ├── mantel_class.csv
 │   ├── mantel_family.csv
 │   ├── mantel_genus.csv
 │   ├── mantel_order.csv
 │   ├── mantel_phylum.csv
-│   └── mantel_species.csv
+│   ├── mantel_species.csv
+│   └── master_frames.Rds
 ├── doc
 │   ├── S_dulcamara_popmap_1.txt
 │   ├── S_dulcamara_sample_info_1.txt
