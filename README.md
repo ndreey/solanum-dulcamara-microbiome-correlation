@@ -252,7 +252,9 @@ $Species
 10 B2-B2 B2      B2      0             0.225         0.669         0.530     0  
 # ℹ 54 more rows
 # ℹ Use `print(n = ...)` to see more rows
-
+```
+You can subset specific taxonomic level of interest.
+```R
 > # Subset to specific taxonomic level: Order
 > df_order <- master_frames$Order
 
