@@ -165,6 +165,28 @@ for (TAXA in c("Phylum", "Class", "Order", "Family", "Genus", "Species")) {
 # All mantel dataframes stored in list at their taxonomic level.
 master_frames <- master_list
 
+# Save the object to an .Rds file 
+saveRDS(master_frames, file = "data/master_frames.Rds") 
+
+# Combine all taxonomic levels into one dataframe
+df_all <- bind_rows(
+  master_frames$Phylum %>% mutate(taxon_level = "Phylum"),
+  master_frames$Class %>% mutate(taxon_level = "Class"),
+  master_frames$Order %>% mutate(taxon_level = "Order"),
+  master_frames$Family %>% mutate(taxon_level = "Family"),
+  master_frames$Genus %>% mutate(taxon_level = "Genus"),
+  master_frames$Species %>% mutate(taxon_level = "Species")
+)
+
+# Save as .csv and .Rds
+write_csv(df_all, "data/mantel_all_taxa.csv")
+saveRDS(df_all, file = "data/mantel_all_taxa.Rds")
+
+# Later, you can load it back with: 
+#master_frames <- readRDS("data/master_frames.Rds")
+#df_all <- readRDS("data/mantel_all_taxa.Rds")
+
+
 #### Exampel usage ####
 # They can be separated out like this.
 df_phylum <- master_frames$Phylum
@@ -173,6 +195,17 @@ df_order <- master_frames$Order
 df_family <- master_frames$Family
 df_genus <- master_frames$Genus
 df_species <- master_frames$Species
+
+##### Save the Master Dataframes as .csv ######
+write_csv(df_phylum, "data/mantel_phylum.csv")
+write_csv(df_class, "data/mantel_class.csv")
+write_csv(df_order, "data/mantel_order.csv")
+write_csv(df_family, "data/mantel_family.csv")
+write_csv(df_genus, "data/mantel_genus.csv")
+write_csv(df_species, "data/mantel_species.csv")
+
+
+
 
 # Prepare data for plotting (exclude duplicated pairs and self-comparisons)
 df_plot <- df_family %>%
