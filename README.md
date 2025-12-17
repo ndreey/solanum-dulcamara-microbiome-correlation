@@ -120,8 +120,85 @@ Run these scripts within Rstudio:
 - `01-mantel.R`: This will create multiple plots such as ridge plots, scatter plots to better visualize the mean Bray-Curtis data.
 - `02-master-data-frame.R`: This will create a list where each element is a dataframe for each taxonomic level. Holding FST, km.diff, and mean Bray-Curtis distances between each pairwise comparison.
 
+## Working with the Data Frames
+In `02-master-data-frame.R` there are two R objects of importance: `master_frames` and `df_all`
 _example_
+
+```R
+# All mantel dataframes stored in list at their taxonomic level.
+master_frames <- master_list
+
+# Save the object to an .Rds file 
+saveRDS(master_frames, file = "data/master_frames.Rds") 
+
+# Combine all taxonomic levels into one dataframe
+df_all <- bind_rows(
+  master_frames$Phylum %>% mutate(taxon_level = "Phylum"),
+  master_frames$Class %>% mutate(taxon_level = "Class"),
+  master_frames$Order %>% mutate(taxon_level = "Order"),
+  master_frames$Family %>% mutate(taxon_level = "Family"),
+  master_frames$Genus %>% mutate(taxon_level = "Genus"),
+  master_frames$Species %>% mutate(taxon_level = "Species")
+)
+
+# Save as .csv and .Rds
+write_csv(df_all, "data/mantel_all_taxa.csv")
+saveRDS(df_all, file = "data/mantel_all_taxa.Rds")
 ```
+
+These can be loaded using this code
+```R
+# You can load it back with: 
+master_frames <- readRDS("data/master_frames.Rds")
+df_all <- readRDS("data/mantel_all_taxa.Rds")
+```
+
+Preview of `mantel_all_taxa.Rds`
+```R
+> # Show dimensions
+> dim(df_all)
+[1] 384   9
+
+> # Show number of samples per taxa
+> df_all %>% count(taxon_level)
+# A tibble: 6 × 2
+  taxon_level     n
+  <chr>       <int>
+1 Class          64
+2 Family         64
+3 Genus          64
+4 Order          64
+5 Phylum         64
+6 Species        64
+
+> # Shows three rows from each taxonomic level
+> df_all %>% group_by(taxon_level) %>% slice_head(n = 3)
+# A tibble: 18 × 9
+# Groups:   taxon_level [6]
+   pair  pop1.id pop2.id   fst mean_bray.AMF mean_bray.ITS mean_bray.16S km.diff taxon_level
+   <chr> <chr>   <chr>   <dbl>         <dbl>         <dbl>         <dbl>   <dbl> <chr>      
+ 1 B1-B1 B1      B1      0            0.0389        0.328          0.240     0   Class      
+ 2 B1-B2 B1      B2      0.258        0.0505        0.363          0.268    31.2 Class      
+ 3 B1-F1 B1      F1      0.544        0.0366        0.357          0.332     1.9 Class      
+ 4 B1-B1 B1      B1      0            0.355         0.540          0.445     0   Family     
+ 5 B1-B2 B1      B2      0.258        0.416         0.646          0.486    31.2 Family     
+ 6 B1-F1 B1      F1      0.544        0.468         0.721          0.593     1.9 Family     
+ 7 B1-B1 B1      B1      0            0.356         0.596          0.548     0   Genus      
+ 8 B1-B2 B1      B2      0.258        0.416         0.745          0.600    31.2 Genus      
+ 9 B1-F1 B1      F1      0.544        0.468         0.774          0.719     1.9 Genus      
+10 B1-B1 B1      B1      0            0.237         0.488          0.375     0   Order      
+11 B1-B2 B1      B2      0.258        0.344         0.545          0.416    31.2 Order      
+12 B1-F1 B1      F1      0.544        0.403         0.543          0.493     1.9 Order      
+13 B1-B1 B1      B1      0            0             0.0637         0.191     0   Phylum     
+14 B1-B2 B1      B2      0.258        0             0.0784         0.230    31.2 Phylum     
+15 B1-F1 B1      F1      0.544        0             0.114          0.250     1.9 Phylum     
+16 B1-B1 B1      B1      0            0.370         0.640          0.570     0   Species    
+17 B1-B2 B1      B2      0.258        0.427         0.806          0.632    31.2 Species    
+18 B1-F1 B1      F1      0.544        0.477         0.872          0.748     1.9 Species    
+```
+
+Preview of `master_frames.Rds` and how to use it.
+```R
 > master_frames
 $Phylum
 # A tibble: 64 × 8
@@ -157,7 +234,32 @@ $Class
 # ℹ 54 more rows
 # ℹ Use `print(n = ...)` to see more rows
 
-$Order
+...
+
+$Species
+# A tibble: 64 × 8
+   pair  pop1.id pop2.id   fst mean_bray.AMF mean_bray.ITS mean_bray.16S km.diff
+   <chr> <chr>   <chr>   <dbl>         <dbl>         <dbl>         <dbl>   <dbl>
+ 1 B1-B1 B1      B1      0             0.370         0.640         0.570     0  
+ 2 B1-B2 B1      B2      0.258         0.427         0.806         0.632    31.2
+ 3 B1-F1 B1      F1      0.544         0.477         0.872         0.748     1.9
+ 4 B1-F2 B1      F2      0.261         0.491         0.836         0.675     2.3
+ 5 B1-R1 B1      R1      0.602         0.457         0.837         0.806     9.2
+ 6 B1-R2 B1      R2      0.479         0.542         0.819         0.685    24.2
+ 7 B1-U1 B1      U1      0.402         0.458         0.837         0.662    10.2
+ 8 B1-U2 B1      U2      0.409         0.409         0.830         0.647    11.9
+ 9 B2-B1 B2      B1      0.258         0.427         0.806         0.632    31.2
+10 B2-B2 B2      B2      0             0.225         0.669         0.530     0  
+# ℹ 54 more rows
+# ℹ Use `print(n = ...)` to see more rows
+
+> # Subset to specific taxonomic level: Order
+> df_order <- master_frames$Order
+
+> dim(df_order)
+[1] 64  8
+
+> df_order
 # A tibble: 64 × 8
    pair  pop1.id pop2.id   fst mean_bray.AMF mean_bray.ITS mean_bray.16S km.diff
    <chr> <chr>   <chr>   <dbl>         <dbl>         <dbl>         <dbl>   <dbl>

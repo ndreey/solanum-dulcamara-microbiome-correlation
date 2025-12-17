@@ -182,7 +182,7 @@ df_all <- bind_rows(
 write_csv(df_all, "data/mantel_all_taxa.csv")
 saveRDS(df_all, file = "data/mantel_all_taxa.Rds")
 
-# Later, you can load it back with: 
+# You can load it back with: 
 #master_frames <- readRDS("data/master_frames.Rds")
 #df_all <- readRDS("data/mantel_all_taxa.Rds")
 
@@ -203,8 +203,6 @@ write_csv(df_order, "data/mantel_order.csv")
 write_csv(df_family, "data/mantel_family.csv")
 write_csv(df_genus, "data/mantel_genus.csv")
 write_csv(df_species, "data/mantel_species.csv")
-
-
 
 
 # Prepare data for plotting (exclude duplicated pairs and self-comparisons)
@@ -264,13 +262,3 @@ print(comparison_results)
 #16 mean_bray.16S   0.5100   0.050       FALSE
 #17 mean_bray.ITS   0.2115   0.253       FALSE
 #18 mean_bray.AMF   0.0874   0.393       FALSE
-
-
-
-##### Save the Master Dataframes as .csv ######
-write_csv(df_phylum, "data/mantel_phylum.csv")
-write_csv(df_class, "data/mantel_class.csv")
-write_csv(df_order, "data/mantel_order.csv")
-write_csv(df_family, "data/mantel_family.csv")
-write_csv(df_genus, "data/mantel_genus.csv")
-write_csv(df_species, "data/mantel_species.csv")
