@@ -279,6 +279,19 @@ You can subset specific taxonomic level of interest.
 # ℹ Use `print(n = ...)` to see more rows
 ```
 
+Finally, to run mantel tests, you can use the function `run_mantel()` that is designed to handle the columns of a dataframe. The function is sourced from `master-data-frames-functions.R`.
+```R
+# Run Mantel tests on family level dataframe testing mean Bray-Curtis
+# against Fst.
+> mantel_fam <- run_mantel(df_family, "mean_bray.16S", "fst")
+
+> cat("Mantel r =", mantel_fam$r, "\n")
+Mantel r = 0.51 
+> cat("p-value =", mantel_fam$p, "\n")
+p-value = 0.047 
+```
+
+
 ## Main Tools
 mamba environments in .yml files can be found in `mamba_environments/`. 
 | Name | Version | Channel |
