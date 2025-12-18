@@ -11,5 +11,4 @@ processDADA2/tax/
 05-mantel-overview/
 data/
 *.xlsx
-
-results/
+results/*
