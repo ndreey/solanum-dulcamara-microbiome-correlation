@@ -119,6 +119,19 @@ paletteer     1.6.0
 Run these scripts within Rstudio:
 - `01-mantel.R`: This will create multiple plots such as ridge plots, scatter plots to better visualize the mean Bray-Curtis data.
 - `02-master-data-frame.R`: This will create a list where each element is a dataframe for each taxonomic level. Holding FST, km.diff, and mean Bray-Curtis distances between each pairwise comparison.
+- `03-mantel-test-results-excel.R`: This script runs mantel tests on specified columns against Fst and creates `mantel_test_results.xlsx`.  This excel file holds the summarized mantel tests across the taxonomic levels.
+
+```
+# This will be printed to the excel file
+> results
+     taxa mantel.r_16S mantel.p_16S mantel.r_ITS mantel.p_ITS mantel.r_AMF mantel.p_AMF mantel.r_GEO mantel.p_GEO
+1  Phylum        0.466        0.045        0.571        0.028           NA           NA       -0.055        0.572
+2   Class        0.525        0.035        0.072        0.411       -0.059        0.584       -0.055        0.547
+3   Order        0.490        0.043       -0.030        0.541        0.033        0.449       -0.055        0.547
+4  Family        0.510        0.040        0.212        0.251        0.087        0.399       -0.055        0.560
+5   Genus        0.433        0.091       -0.043        0.540        0.079        0.417       -0.055        0.581
+6 Species        0.413        0.087        0.183        0.229        0.067        0.426       -0.055        0.544
+```
 
 ## Working with the Data Frames
 In `02-master-data-frame.R` there are two R objects of importance: `master_frames` and `df_all`.
