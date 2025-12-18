@@ -18,7 +18,7 @@ library(writexl)
 source("scripts/r-scripts/master-data-frame-functions.R")
 
 set.seed(1337)
-
+dir.create("results", showWarnings = FALSE, recursive = TRUE)
 #### Loading Data  #####
 # Load meta data
 meta_dulcamara <- read_delim("doc/meta-microeco.tsv", delim = "\t", 
@@ -166,7 +166,7 @@ for (TAXA in c("Phylum", "Class", "Order", "Family", "Genus", "Species")) {
 master_frames <- master_list
 
 # Save the object to an .Rds file 
-saveRDS(master_frames, file = "data/master_frames.Rds") 
+saveRDS(master_frames, file = "results/master_frames.Rds") 
 
 # Combine all taxonomic levels into one dataframe
 df_all <- bind_rows(
@@ -179,8 +179,8 @@ df_all <- bind_rows(
 )
 
 # Save as .csv and .Rds
-write_csv(df_all, "data/mantel_all_taxa.csv")
-saveRDS(df_all, file = "data/mantel_all_taxa.Rds")
+write_csv(df_all, "results/mantel_all_taxa.csv")
+saveRDS(df_all, file = "results/mantel_all_taxa.Rds")
 
 # You can load it back with: 
 #master_frames <- readRDS("data/master_frames.Rds")
@@ -197,12 +197,12 @@ df_genus <- master_frames$Genus
 df_species <- master_frames$Species
 
 ##### Save the Master Dataframes as .csv ######
-write_csv(df_phylum, "data/mantel_phylum.csv")
-write_csv(df_class, "data/mantel_class.csv")
-write_csv(df_order, "data/mantel_order.csv")
-write_csv(df_family, "data/mantel_family.csv")
-write_csv(df_genus, "data/mantel_genus.csv")
-write_csv(df_species, "data/mantel_species.csv")
+write_csv(df_phylum, "results/mantel_phylum.csv")
+write_csv(df_class, "results/mantel_class.csv")
+write_csv(df_order, "results/mantel_order.csv")
+write_csv(df_family, "results/mantel_family.csv")
+write_csv(df_genus, "results/mantel_genus.csv")
+write_csv(df_species, "results/mantel_species.csv")
 
 
 # Prepare data for plotting (exclude duplicated pairs and self-comparisons)
@@ -242,23 +242,24 @@ for (bd in beta_div) {
 
 cat("\n=== Comparing Different Microbiome Types ===\n")
 print(comparison_results)
+
 #> print(comparison_results)
-#microbiome mantel_r p_value significant
-#1  mean_bray.16S   0.5100   0.051       FALSE
-#2  mean_bray.ITS   0.2115   0.232       FALSE
-#3  mean_bray.AMF   0.0874   0.399       FALSE
-#4  mean_bray.16S   0.5100   0.039        TRUE
-#5  mean_bray.ITS   0.2115   0.234       FALSE
-#6  mean_bray.AMF   0.0874   0.385       FALSE
-#7  mean_bray.16S   0.5100   0.045        TRUE
-#8  mean_bray.ITS   0.2115   0.233       FALSE
-#9  mean_bray.AMF   0.0874   0.367       FALSE
-#10 mean_bray.16S   0.5100   0.046        TRUE
-#11 mean_bray.ITS   0.2115   0.244       FALSE
-#12 mean_bray.AMF   0.0874   0.390       FALSE
-#13 mean_bray.16S   0.5100   0.040        TRUE
-#14 mean_bray.ITS   0.2115   0.257       FALSE
-#15 mean_bray.AMF   0.0874   0.418       FALSE
-#16 mean_bray.16S   0.5100   0.050       FALSE
-#17 mean_bray.ITS   0.2115   0.253       FALSE
-#18 mean_bray.AMF   0.0874   0.393       FALSE
+#microbiome         mantel_r p_value significant
+#1  mean_bray.16S   0.5100   0.045        TRUE
+#2  mean_bray.ITS   0.2115   0.222       FALSE
+#3  mean_bray.AMF   0.0874   0.408       FALSE
+#4  mean_bray.16S   0.5100   0.054       FALSE
+#5  mean_bray.ITS   0.2115   0.264       FALSE
+#6  mean_bray.AMF   0.0874   0.388       FALSE
+#7  mean_bray.16S   0.5100   0.043        TRUE
+#8  mean_bray.ITS   0.2115   0.235       FALSE
+#9  mean_bray.AMF   0.0874   0.401       FALSE
+#10 mean_bray.16S   0.5100   0.040        TRUE
+#11 mean_bray.ITS   0.2115   0.240       FALSE
+#12 mean_bray.AMF   0.0874   0.365       FALSE
+#13 mean_bray.16S   0.5100   0.041        TRUE
+#14 mean_bray.ITS   0.2115   0.249       FALSE
+#15 mean_bray.AMF   0.0874   0.399       FALSE
+#16 mean_bray.16S   0.5100   0.030        TRUE
+#17 mean_bray.ITS   0.2115   0.239       FALSE
+#18 mean_bray.AMF   0.0874   0.403       FALSE#

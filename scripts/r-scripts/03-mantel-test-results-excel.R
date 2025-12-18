@@ -16,7 +16,7 @@ library(writexl)
 
 
 set.seed(1337)
-setwd("../solanum-dulcamara-microbiome-correlation/")
+dir.create("results", showWarnings = FALSE, recursive = TRUE)
 
 source("scripts/r-scripts/master-data-frame-functions.R")
 
@@ -70,7 +70,7 @@ for (mb_name in names(microbiome_types)) {
 print(results)
 
 # Write to Excel
-write_xlsx(results, "mantel_test_results.xlsx")
+write_xlsx(results, "results/mantel_test_results.xlsx")
 
 
 

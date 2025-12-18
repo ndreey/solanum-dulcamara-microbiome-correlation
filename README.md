@@ -350,350 +350,364 @@ du -sh *
 tree . | grep -v "SLURM-"
 .
 ├── 01-pruneLD
-│   └── new.filt.final-50-10-0.2
-│       ├── new.filt.final-50-10-0.2.log
-│       ├── new.filt.final-50-10-0.2.prune.in
-│       └── new.filt.final-50-10-0.2.prune.out
+│   └── new.filt.final-50-10-0.2
+│       ├── new.filt.final-50-10-0.2.log
+│       ├── new.filt.final-50-10-0.2.prune.in
+│       └── new.filt.final-50-10-0.2.prune.out
 ├── 02-PCA
-│   └── new.filt.final-50-10-0.2
-│       ├── PCA_1vs2.png
-│       ├── PCA_3vs4.png
-│       ├── PCA_5vs6.png
-│       ├── PCA_scree.png
-│       ├── new.filt.final-50-10-0.2.bed
-│       ├── new.filt.final-50-10-0.2.bim
-│       ├── new.filt.final-50-10-0.2.eigenval
-│       ├── new.filt.final-50-10-0.2.eigenvec
-│       ├── new.filt.final-50-10-0.2.fam
-│       ├── new.filt.final-50-10-0.2.human-chr.bim
-│       ├── new.filt.final-50-10-0.2.log
-│       └── samples.txt
+│   └── new.filt.final-50-10-0.2
+│       ├── PCA_1vs2.png
+│       ├── PCA_3vs4.png
+│       ├── PCA_5vs6.png
+│       ├── PCA_scree.png
+│       ├── new.filt.final-50-10-0.2.bed
+│       ├── new.filt.final-50-10-0.2.bim
+│       ├── new.filt.final-50-10-0.2.eigenval
+│       ├── new.filt.final-50-10-0.2.eigenvec
+│       ├── new.filt.final-50-10-0.2.fam
+│       ├── new.filt.final-50-10-0.2.human-chr.bim
+│       ├── new.filt.final-50-10-0.2.log
+│       └── samples.txt
 ├── 03-ADMIXTURE
-│   └── new.filt.final-50-10-0.2
-│       ├── admixture-2.png
-│       ├── admixture-3.png
-│       ├── admixture-4.png
-│       ├── admixture-5.png
-│       ├── admixture-6.png
-│       ├── admixture-7.png
-│       ├── admixture-8.png
-│       ├── admixture-9.png
-│       ├── new.filt.final-50-10-0.2-log1.out
-│       ├── new.filt.final-50-10-0.2-log2.out
-│       ├── new.filt.final-50-10-0.2-log3.out
-│       ├── new.filt.final-50-10-0.2-log4.out
-│       ├── new.filt.final-50-10-0.2-log5.out
-│       ├── new.filt.final-50-10-0.2-log6.out
-│       ├── new.filt.final-50-10-0.2-log7.out
-│       ├── new.filt.final-50-10-0.2-log8.out
-│       ├── new.filt.final-50-10-0.2-log9.out
-│       ├── new.filt.final-50-10-0.2.1.P
-│       ├── new.filt.final-50-10-0.2.1.Q
-│       ├── new.filt.final-50-10-0.2.2.P
-│       ├── new.filt.final-50-10-0.2.2.Q
-│       ├── new.filt.final-50-10-0.2.3.P
-│       ├── new.filt.final-50-10-0.2.3.Q
-│       ├── new.filt.final-50-10-0.2.4.P
-│       ├── new.filt.final-50-10-0.2.4.Q
-│       ├── new.filt.final-50-10-0.2.5.P
-│       ├── new.filt.final-50-10-0.2.5.Q
-│       ├── new.filt.final-50-10-0.2.6.P
-│       ├── new.filt.final-50-10-0.2.6.Q
-│       ├── new.filt.final-50-10-0.2.7.P
-│       ├── new.filt.final-50-10-0.2.7.Q
-│       ├── new.filt.final-50-10-0.2.8.P
-│       ├── new.filt.final-50-10-0.2.8.Q
-│       ├── new.filt.final-50-10-0.2.9.P
-│       └── new.filt.final-50-10-0.2.9.Q
+│   └── new.filt.final-50-10-0.2
+│       ├── admixture-2.png
+│       ├── admixture-3.png
+│       ├── admixture-4.png
+│       ├── admixture-5.png
+│       ├── admixture-6.png
+│       ├── admixture-7.png
+│       ├── admixture-8.png
+│       ├── admixture-9.png
+│       ├── new.filt.final-50-10-0.2-log1.out
+│       ├── new.filt.final-50-10-0.2-log2.out
+│       ├── new.filt.final-50-10-0.2-log3.out
+│       ├── new.filt.final-50-10-0.2-log4.out
+│       ├── new.filt.final-50-10-0.2-log5.out
+│       ├── new.filt.final-50-10-0.2-log6.out
+│       ├── new.filt.final-50-10-0.2-log7.out
+│       ├── new.filt.final-50-10-0.2-log8.out
+│       ├── new.filt.final-50-10-0.2-log9.out
+│       ├── new.filt.final-50-10-0.2.1.P
+│       ├── new.filt.final-50-10-0.2.1.Q
+│       ├── new.filt.final-50-10-0.2.2.P
+│       ├── new.filt.final-50-10-0.2.2.Q
+│       ├── new.filt.final-50-10-0.2.3.P
+│       ├── new.filt.final-50-10-0.2.3.Q
+│       ├── new.filt.final-50-10-0.2.4.P
+│       ├── new.filt.final-50-10-0.2.4.Q
+│       ├── new.filt.final-50-10-0.2.5.P
+│       ├── new.filt.final-50-10-0.2.5.Q
+│       ├── new.filt.final-50-10-0.2.6.P
+│       ├── new.filt.final-50-10-0.2.6.Q
+│       ├── new.filt.final-50-10-0.2.7.P
+│       ├── new.filt.final-50-10-0.2.7.Q
+│       ├── new.filt.final-50-10-0.2.8.P
+│       ├── new.filt.final-50-10-0.2.8.Q
+│       ├── new.filt.final-50-10-0.2.9.P
+│       └── new.filt.final-50-10-0.2.9.Q
 ├── 04-piawka
-│   ├── final.merged-CnN1qz.groups
-│   ├── final.merged-tRowBE.samples
-│   └── final.merged.tsv
+│   ├── final.merged-CnN1qz.groups
+│   ├── final.merged-tRowBE.samples
+│   └── final.merged.tsv
 ├── 05-mantel-overview
-│   ├── mantel-16S
-│   │   ├── 01-16S-fst-bray-no-self-Phylum.jpg
-│   │   ├── 01-16S-fst-bray-no-self-Phylum.svg
-│   │   ├── 02-16S-fst-bray-no-self-Class.jpg
-│   │   ├── 02-16S-fst-bray-no-self-Class.svg
-│   │   ├── 03-16S-fst-bray-no-self-Order.jpg
-│   │   ├── 03-16S-fst-bray-no-self-Order.svg
-│   │   ├── 04-16S-fst-bray-no-self-Family.jpg
-│   │   ├── 04-16S-fst-bray-no-self-Family.svg
-│   │   ├── 05-16S-fst-bray-no-self-Genus.jpg
-│   │   ├── 05-16S-fst-bray-no-self-Genus.svg
-│   │   ├── 06-16S-fst-bray-no-self-Species.jpg
-│   │   └── 06-16S-fst-bray-no-self-Species.svg
-│   ├── mantel-AMF
-│   │   ├── 01-AMF-fst-bray-no-self-Phylum.jpg
-│   │   ├── 01-AMF-fst-bray-no-self-Phylum.svg
-│   │   ├── 02-AMF-fst-bray-no-self-Class.jpg
-│   │   ├── 02-AMF-fst-bray-no-self-Class.svg
-│   │   ├── 03-AMF-fst-bray-no-self-Order.jpg
-│   │   ├── 03-AMF-fst-bray-no-self-Order.svg
-│   │   ├── 04-AMF-fst-bray-no-self-Family.jpg
-│   │   ├── 04-AMF-fst-bray-no-self-Family.svg
-│   │   ├── 05-AMF-fst-bray-no-self-Genus.jpg
-│   │   ├── 05-AMF-fst-bray-no-self-Genus.svg
-│   │   ├── 06-AMF-fst-bray-no-self-Species.jpg
-│   │   └── 06-AMF-fst-bray-no-self-Species.svg
-│   ├── mantel-ITS
-│   │   ├── 01-ITS-fst-bray-no-self-Phylum.jpg
-│   │   ├── 01-ITS-fst-bray-no-self-Phylum.svg
-│   │   ├── 02-ITS-fst-bray-no-self-Class.jpg
-│   │   ├── 02-ITS-fst-bray-no-self-Class.svg
-│   │   ├── 03-ITS-fst-bray-no-self-Order.jpg
-│   │   ├── 03-ITS-fst-bray-no-self-Order.svg
-│   │   ├── 04-ITS-fst-bray-no-self-Family.jpg
-│   │   ├── 04-ITS-fst-bray-no-self-Family.svg
-│   │   ├── 05-ITS-fst-bray-no-self-Genus.jpg
-│   │   ├── 05-ITS-fst-bray-no-self-Genus.svg
-│   │   ├── 06-ITS-fst-bray-no-self-Species.jpg
-│   │   └── 06-ITS-fst-bray-no-self-Species.svg
-│   ├── mantel-together
-│   │   ├── 01-mantel-comparison-Phylum.jpg
-│   │   ├── 01-mantel-comparison-Phylum.svg
-│   │   ├── 02-mantel-comparison-Class.jpg
-│   │   ├── 02-mantel-comparison-Class.svg
-│   │   ├── 03-mantel-comparison-Order.jpg
-│   │   ├── 03-mantel-comparison-Order.svg
-│   │   ├── 04-mantel-comparison-Family.jpg
-│   │   ├── 04-mantel-comparison-Family.svg
-│   │   ├── 05-mantel-comparison-Genus.jpg
-│   │   ├── 05-mantel-comparison-Genus.svg
-│   │   ├── 06-mantel-comparison-Species.jpg
-│   │   └── 06-mantel-comparison-Species.svg
-│   ├── mantel_summary.xlsx
-│   ├── ridge-combo-16S
-│   │   ├── 01-16S-fst-bray-ridge-Phylum.jpg
-│   │   ├── 01-16S-fst-bray-ridge-Phylum.svg
-│   │   ├── 02-16S-fst-bray-ridge-Class.jpg
-│   │   ├── 02-16S-fst-bray-ridge-Class.svg
-│   │   ├── 03-16S-fst-bray-ridge-Order.jpg
-│   │   ├── 03-16S-fst-bray-ridge-Order.svg
-│   │   ├── 04-16S-fst-bray-ridge-Family.jpg
-│   │   ├── 04-16S-fst-bray-ridge-Family.svg
-│   │   ├── 05-16S-fst-bray-ridge-Genus.jpg
-│   │   ├── 05-16S-fst-bray-ridge-Genus.svg
-│   │   ├── 06-16S-fst-bray-ridge-Species.jpg
-│   │   └── 06-16S-fst-bray-ridge-Species.svg
-│   ├── ridge-combo-AMF
-│   │   ├── 01-AMF-fst-bray-ridge-Phylum.jpg
-│   │   ├── 01-AMF-fst-bray-ridge-Phylum.svg
-│   │   ├── 02-AMF-fst-bray-ridge-Class.jpg
-│   │   ├── 02-AMF-fst-bray-ridge-Class.svg
-│   │   ├── 03-AMF-fst-bray-ridge-Order.jpg
-│   │   ├── 03-AMF-fst-bray-ridge-Order.svg
-│   │   ├── 04-AMF-fst-bray-ridge-Family.jpg
-│   │   ├── 04-AMF-fst-bray-ridge-Family.svg
-│   │   ├── 05-AMF-fst-bray-ridge-Genus.jpg
-│   │   ├── 05-AMF-fst-bray-ridge-Genus.svg
-│   │   ├── 06-AMF-fst-bray-ridge-Species.jpg
-│   │   └── 06-AMF-fst-bray-ridge-Species.svg
-│   └── ridge-combo-ITS
-│       ├── 01-ITS-fst-bray-ridge-Phylum.jpg
-│       ├── 01-ITS-fst-bray-ridge-Phylum.svg
-│       ├── 02-ITS-fst-bray-ridge-Class.jpg
-│       ├── 02-ITS-fst-bray-ridge-Class.svg
-│       ├── 03-ITS-fst-bray-ridge-Order.jpg
-│       ├── 03-ITS-fst-bray-ridge-Order.svg
-│       ├── 04-ITS-fst-bray-ridge-Family.jpg
-│       ├── 04-ITS-fst-bray-ridge-Family.svg
-│       ├── 05-ITS-fst-bray-ridge-Genus.jpg
-│       ├── 05-ITS-fst-bray-ridge-Genus.svg
-│       ├── 06-ITS-fst-bray-ridge-Species.jpg
-│       └── 06-ITS-fst-bray-ridge-Species.svg
+│   ├── mantel-16S
+│   │   ├── 01-16S-fst-bray-no-self-Phylum.jpg
+│   │   ├── 01-16S-fst-bray-no-self-Phylum.svg
+│   │   ├── 02-16S-fst-bray-no-self-Class.jpg
+│   │   ├── 02-16S-fst-bray-no-self-Class.svg
+│   │   ├── 03-16S-fst-bray-no-self-Order.jpg
+│   │   ├── 03-16S-fst-bray-no-self-Order.svg
+│   │   ├── 04-16S-fst-bray-no-self-Family.jpg
+│   │   ├── 04-16S-fst-bray-no-self-Family.svg
+│   │   ├── 05-16S-fst-bray-no-self-Genus.jpg
+│   │   ├── 05-16S-fst-bray-no-self-Genus.svg
+│   │   ├── 06-16S-fst-bray-no-self-Species.jpg
+│   │   └── 06-16S-fst-bray-no-self-Species.svg
+│   ├── mantel-AMF
+│   │   ├── 01-AMF-fst-bray-no-self-Phylum.jpg
+│   │   ├── 01-AMF-fst-bray-no-self-Phylum.svg
+│   │   ├── 02-AMF-fst-bray-no-self-Class.jpg
+│   │   ├── 02-AMF-fst-bray-no-self-Class.svg
+│   │   ├── 03-AMF-fst-bray-no-self-Order.jpg
+│   │   ├── 03-AMF-fst-bray-no-self-Order.svg
+│   │   ├── 04-AMF-fst-bray-no-self-Family.jpg
+│   │   ├── 04-AMF-fst-bray-no-self-Family.svg
+│   │   ├── 05-AMF-fst-bray-no-self-Genus.jpg
+│   │   ├── 05-AMF-fst-bray-no-self-Genus.svg
+│   │   ├── 06-AMF-fst-bray-no-self-Species.jpg
+│   │   └── 06-AMF-fst-bray-no-self-Species.svg
+│   ├── mantel-ITS
+│   │   ├── 01-ITS-fst-bray-no-self-Phylum.jpg
+│   │   ├── 01-ITS-fst-bray-no-self-Phylum.svg
+│   │   ├── 02-ITS-fst-bray-no-self-Class.jpg
+│   │   ├── 02-ITS-fst-bray-no-self-Class.svg
+│   │   ├── 03-ITS-fst-bray-no-self-Order.jpg
+│   │   ├── 03-ITS-fst-bray-no-self-Order.svg
+│   │   ├── 04-ITS-fst-bray-no-self-Family.jpg
+│   │   ├── 04-ITS-fst-bray-no-self-Family.svg
+│   │   ├── 05-ITS-fst-bray-no-self-Genus.jpg
+│   │   ├── 05-ITS-fst-bray-no-self-Genus.svg
+│   │   ├── 06-ITS-fst-bray-no-self-Species.jpg
+│   │   └── 06-ITS-fst-bray-no-self-Species.svg
+│   ├── mantel-together
+│   │   ├── 01-mantel-comparison-Phylum.jpg
+│   │   ├── 01-mantel-comparison-Phylum.svg
+│   │   ├── 02-mantel-comparison-Class.jpg
+│   │   ├── 02-mantel-comparison-Class.svg
+│   │   ├── 03-mantel-comparison-Order.jpg
+│   │   ├── 03-mantel-comparison-Order.svg
+│   │   ├── 04-mantel-comparison-Family.jpg
+│   │   ├── 04-mantel-comparison-Family.svg
+│   │   ├── 05-mantel-comparison-Genus.jpg
+│   │   ├── 05-mantel-comparison-Genus.svg
+│   │   ├── 06-mantel-comparison-Species.jpg
+│   │   └── 06-mantel-comparison-Species.svg
+│   ├── mantel_summary.xlsx
+│   ├── ridge-combo-16S
+│   │   ├── 01-16S-fst-bray-ridge-Phylum.jpg
+│   │   ├── 01-16S-fst-bray-ridge-Phylum.svg
+│   │   ├── 02-16S-fst-bray-ridge-Class.jpg
+│   │   ├── 02-16S-fst-bray-ridge-Class.svg
+│   │   ├── 03-16S-fst-bray-ridge-Order.jpg
+│   │   ├── 03-16S-fst-bray-ridge-Order.svg
+│   │   ├── 04-16S-fst-bray-ridge-Family.jpg
+│   │   ├── 04-16S-fst-bray-ridge-Family.svg
+│   │   ├── 05-16S-fst-bray-ridge-Genus.jpg
+│   │   ├── 05-16S-fst-bray-ridge-Genus.svg
+│   │   ├── 06-16S-fst-bray-ridge-Species.jpg
+│   │   └── 06-16S-fst-bray-ridge-Species.svg
+│   ├── ridge-combo-AMF
+│   │   ├── 01-AMF-fst-bray-ridge-Phylum.jpg
+│   │   ├── 01-AMF-fst-bray-ridge-Phylum.svg
+│   │   ├── 02-AMF-fst-bray-ridge-Class.jpg
+│   │   ├── 02-AMF-fst-bray-ridge-Class.svg
+│   │   ├── 03-AMF-fst-bray-ridge-Order.jpg
+│   │   ├── 03-AMF-fst-bray-ridge-Order.svg
+│   │   ├── 04-AMF-fst-bray-ridge-Family.jpg
+│   │   ├── 04-AMF-fst-bray-ridge-Family.svg
+│   │   ├── 05-AMF-fst-bray-ridge-Genus.jpg
+│   │   ├── 05-AMF-fst-bray-ridge-Genus.svg
+│   │   ├── 06-AMF-fst-bray-ridge-Species.jpg
+│   │   └── 06-AMF-fst-bray-ridge-Species.svg
+│   └── ridge-combo-ITS
+│       ├── 01-ITS-fst-bray-ridge-Phylum.jpg
+│       ├── 01-ITS-fst-bray-ridge-Phylum.svg
+│       ├── 02-ITS-fst-bray-ridge-Class.jpg
+│       ├── 02-ITS-fst-bray-ridge-Class.svg
+│       ├── 03-ITS-fst-bray-ridge-Order.jpg
+│       ├── 03-ITS-fst-bray-ridge-Order.svg
+│       ├── 04-ITS-fst-bray-ridge-Family.jpg
+│       ├── 04-ITS-fst-bray-ridge-Family.svg
+│       ├── 05-ITS-fst-bray-ridge-Genus.jpg
+│       ├── 05-ITS-fst-bray-ridge-Genus.svg
+│       ├── 06-ITS-fst-bray-ridge-Species.jpg
+│       └── 06-ITS-fst-bray-ridge-Species.svg
 ├── README.md
 ├── data
-│   ├── 16S_abundance
-│   │   ├── Class_abund.csv
-│   │   ├── Family_abund.csv
-│   │   ├── Genus_abund.csv
-│   │   ├── Order_abund.csv
-│   │   ├── Phylum_abund.csv
-│   │   └── Species_abund.csv
-│   ├── AMF_abundance
-│   │   ├── Class_abund.tsv
-│   │   ├── Family_abund.tsv
-│   │   ├── Genus_abund.tsv
-│   │   ├── Order_abund.tsv
-│   │   ├── Phylum_abund.tsv
-│   │   └── Species_abund.tsv
-│   ├── ITS_abundance
-│   │   ├── Class_abund.csv
-│   │   ├── Family_abund.csv
-│   │   ├── Genus_abund.csv
-│   │   ├── Order_abund.csv
-│   │   ├── Phylum_abund.csv
-│   │   └── Species_abund.csv
-│   ├── mantel_all_taxa.Rds
-│   ├── mantel_all_taxa.csv
-│   ├── mantel_class.csv
-│   ├── mantel_family.csv
-│   ├── mantel_genus.csv
-│   ├── mantel_order.csv
-│   ├── mantel_phylum.csv
-│   ├── mantel_species.csv
-│   └── master_frames.Rds
+│   ├── 16S_abundance
+│   │   ├── Class_abund.csv
+│   │   ├── Family_abund.csv
+│   │   ├── Genus_abund.csv
+│   │   ├── Order_abund.csv
+│   │   ├── Phylum_abund.csv
+│   │   └── Species_abund.csv
+│   ├── AMF_abundance
+│   │   ├── Class_abund.tsv
+│   │   ├── Family_abund.tsv
+│   │   ├── Genus_abund.tsv
+│   │   ├── Order_abund.tsv
+│   │   ├── Phylum_abund.tsv
+│   │   └── Species_abund.tsv
+│   ├── ITS_abundance
+│   │   ├── Class_abund.csv
+│   │   ├── Family_abund.csv
+│   │   ├── Genus_abund.csv
+│   │   ├── Order_abund.csv
+│   │   ├── Phylum_abund.csv
+│   │   └── Species_abund.csv
+│   ├── mantel_all_taxa.Rds
+│   ├── mantel_all_taxa.csv
+│   ├── mantel_class.csv
+│   ├── mantel_family.csv
+│   ├── mantel_genus.csv
+│   ├── mantel_order.csv
+│   ├── mantel_phylum.csv
+│   ├── mantel_species.csv
+│   └── master_frames.Rds
 ├── doc
-│   ├── S_dulcamara_popmap_1.txt
-│   ├── S_dulcamara_sample_info_1.txt
-│   ├── chr_map_replace-invariants.txt
-│   ├── geo_distance.tsv
-│   ├── meta-microeco.tsv
-│   ├── metadata-AMF.tsv
-│   ├── pop_map.tsv
-│   └── uniq_pop_meta.tsv
-├── fst_dxy_matrix.xlsx
+│   ├── S_dulcamara_popmap_1.txt
+│   ├── S_dulcamara_sample_info_1.txt
+│   ├── chr_map_replace-invariants.txt
+│   ├── geo_distance.tsv
+│   ├── meta-microeco.tsv
+│   ├── metadata-AMF.tsv
+│   ├── pop_map.tsv
+│   └── uniq_pop_meta.tsv
 ├── mamba_environments
-│   ├── piawka-environment.yml
-│   ├── r-arena-environment.yml
-│   └── reproduce_dada2-environment.yml
+│   ├── piawka-environment.yml
+│   ├── r-arena-environment.yml
+│   └── reproduce_dada2-environment.yml
 ├── original_vcfs
-│   ├── pe_pop3.snps.vcf.gz
-│   ├── pe_pop3.snps.vcf.gz.tbi
-│   ├── pe_pop3_filt.snps.vcf.gz
-│   ├── pe_pop3_filt.standardized.vcf.gz
-│   ├── pe_pop3_filt.standardized.vcf.gz.tbi
-│   ├── populations.all.vcf.gz
-│   └── populations.all.vcf.gz.tbi
+│   ├── pe_pop3.snps.vcf.gz
+│   ├── pe_pop3.snps.vcf.gz.tbi
+│   ├── pe_pop3_filt.snps.vcf.gz
+│   ├── pe_pop3_filt.standardized.vcf.gz
+│   ├── pe_pop3_filt.standardized.vcf.gz.tbi
+│   ├── populations.all.vcf.gz
+│   └── populations.all.vcf.gz.tbi
 ├── plots
-│   ├── dxy_small_heatmap.png
-│   └── fst_small_heatmap.png
+│   ├── dxy_small_heatmap.png
+│   └── fst_small_heatmap.png
 ├── processDADA2
-│   ├── amplicon_data.tar.gz
-│   ├── amplicon_rds.tar.gz
-│   ├── scripts
-│   │   ├── r-scripts
-│   │   │   ├── create16Sotu.R
-│   │   │   ├── createITSotu.R
-│   │   │   ├── procesSDADA2-16S.R
-│   │   │   └── processDADA2-ITS.R
-│   │   ├── runDADA2-16S.sh
-│   │   └── runDADA2-ITS.sh
-│   └── tax
-│       ├── sh_general_release_dynamic_s_all_10.05.2021.fasta
-│       ├── silva_nr99_v138.1_train_set.fa.gz
-│       └── silva_species_assignment_v138.1.fa.gz
+│   ├── amplicon_data.tar.gz
+│   ├── amplicon_rds.tar.gz
+│   ├── scripts
+│   │   ├── r-scripts
+│   │   │   ├── create16Sotu.R
+│   │   │   ├── createITSotu.R
+│   │   │   ├── procesSDADA2-16S.R
+│   │   │   └── processDADA2-ITS.R
+│   │   ├── runDADA2-16S.sh
+│   │   └── runDADA2-ITS.sh
+│   └── tax
+│       ├── sh_general_release_dynamic_s_all_10.05.2021.fasta
+│       ├── silva_nr99_v138.1_train_set.fa.gz
+│       └── silva_species_assignment_v138.1.fa.gz
+├── results
+│   ├── dxy_small_heatmap.png
+│   ├── fst_dxy_matrix.xlsx
+│   ├── fst_small_heatmap.png
+│   ├── mantel_all_taxa.Rds
+│   ├── mantel_all_taxa.csv
+│   ├── mantel_class.csv
+│   ├── mantel_family.csv
+│   ├── mantel_genus.csv
+│   ├── mantel_order.csv
+│   ├── mantel_phylum.csv
+│   ├── mantel_species.csv
+│   ├── mantel_test_results.xlsx
+│   └── master_frames.Rds
 ├── scripts
-│   ├── 01-initial-filter.sh
-│   ├── 02-final-filter.sh
-│   ├── annotateVCF.sh
-│   ├── getBCFstats.sh
-│   ├── getPopStruct.sh
-│   ├── getSNPstats.sh
-│   ├── mergeInvariants.sh
-│   ├── plotRawStats.sh
-│   ├── r-scripts
-│   │   ├── 01_mantel.R
-│   │   ├── 02-master-data-frame.R
-│   │   ├── fst_dxy_hc.R
-│   │   ├── master-data-frame-functions.R
-│   │   ├── plotADMIXTURE.R
-│   │   ├── plotPCA.R
-│   │   ├── plotRawStats.R
-│   │   └── plotVCFTOOLSstats.R
-│   ├── runPiawka.sh
-│   └── tarball-it.sh
+│   ├── 01-initial-filter.sh
+│   ├── 02-final-filter.sh
+│   ├── annotateVCF.sh
+│   ├── getBCFstats.sh
+│   ├── getPopStruct.sh
+│   ├── getSNPstats.sh
+│   ├── mergeInvariants.sh
+│   ├── plotRawStats.sh
+│   ├── r-scripts
+│   │   ├── 01_mantel.R
+│   │   ├── 02-master-data-frame.R
+│   │   ├── 03-mantel-test-results-excel.R
+│   │   ├── fst_dxy_hc.R
+│   │   ├── master-data-frame-functions.R
+│   │   ├── plotADMIXTURE.R
+│   │   ├── plotPCA.R
+│   │   ├── plotRawStats.R
+│   │   └── plotVCFTOOLSstats.R
+│   ├── runPiawka.sh
+│   └── tarball-it.sh
 ├── slurm-logs
-│   ├── PopStruct
-│   ├── R
-│   ├── annotate
-│   ├── piawka
-│   ├── stats
-│   ├── tarball
-│   └── wrangle
+│   ├── PopStruct
+│   ├── R
+│   ├── annotate
+│   ├── piawka
+│   ├── stats
+│   ├── tarball
+│   └── wrangle
 ├── stats
-│   ├── new.filt
-│   │   ├── new.filt.frq
-│   │   ├── new.filt.idepth
-│   │   ├── new.filt.imiss
-│   │   ├── new.filt.lmiss
-│   │   ├── plots
-│   │   │   ├── AC_density.png
-│   │   │   ├── AF_density.png
-│   │   │   ├── AN_density.png
-│   │   │   ├── ExcHet_density.png
-│   │   │   ├── F_MISSING.png
-│   │   │   ├── idepth_boxplot.png
-│   │   │   ├── imiss_boxplot.png
-│   │   │   ├── lmiss_density.png
-│   │   │   ├── maf_density.png
-│   │   │   └── maf_threshold_scree.png
-│   │   └── raw_stats-new.filt.tsv
-│   ├── new.filt.clean.anno
-│   │   ├── new.filt.clean.anno.frq
-│   │   ├── new.filt.clean.anno.idepth
-│   │   ├── new.filt.clean.anno.imiss
-│   │   ├── new.filt.clean.anno.lmiss
-│   │   └── raw_stats-new.filt.clean.anno.tsv
-│   ├── new.filt.final
-│   │   ├── new.filt.final.frq
-│   │   ├── new.filt.final.idepth
-│   │   ├── new.filt.final.imiss
-│   │   ├── new.filt.final.lmiss
-│   │   └── raw_stats-new.filt.final.tsv
-│   ├── new.raw.anno
-│   │   ├── new.raw.anno.frq
-│   │   ├── new.raw.anno.idepth
-│   │   ├── new.raw.anno.imiss
-│   │   ├── new.raw.anno.lmiss
-│   │   ├── plots
-│   │   │   ├── AC_density.png
-│   │   │   ├── AF_density.png
-│   │   │   ├── AN_density.png
-│   │   │   ├── ExcHet_density.png
-│   │   │   ├── F_MISSING.png
-│   │   │   ├── idepth_boxplot.png
-│   │   │   ├── imiss_boxplot.png
-│   │   │   ├── lmiss_density.png
-│   │   │   ├── maf_density.png
-│   │   │   └── maf_threshold_scree.png
-│   │   └── raw_stats-new.raw.anno.tsv
-│   ├── pe_pop3.annotated
-│   │   ├── pe_pop3.annotated.frq
-│   │   ├── pe_pop3.annotated.idepth
-│   │   ├── pe_pop3.annotated.imiss
-│   │   ├── pe_pop3.annotated.lmiss
-│   │   ├── plots
-│   │   │   ├── AC_density.png
-│   │   │   ├── AF_density.png
-│   │   │   ├── AN_density.png
-│   │   │   ├── ExcHet_density.png
-│   │   │   ├── F_MISSING.png
-│   │   │   ├── idepth_boxplot.png
-│   │   │   ├── imiss_boxplot.png
-│   │   │   ├── lmiss_density.png
-│   │   │   ├── maf_density.png
-│   │   │   └── maf_threshold_scree.png
-│   │   └── raw_stats-pe_pop3.annotated.tsv
-│   ├── pe_pop3_filt.annotated
-│   │   ├── pe_pop3_filt.annotated.frq
-│   │   ├── pe_pop3_filt.annotated.idepth
-│   │   ├── pe_pop3_filt.annotated.imiss
-│   │   ├── pe_pop3_filt.annotated.lmiss
-│   │   ├── plots
-│   │   │   ├── AC_density.png
-│   │   │   ├── AF_density.png
-│   │   │   ├── AN_density.png
-│   │   │   ├── ExcHet_density.png
-│   │   │   ├── F_MISSING.png
-│   │   │   ├── idepth_boxplot.png
-│   │   │   ├── imiss_boxplot.png
-│   │   │   ├── lmiss_density.png
-│   │   │   ├── maf_density.png
-│   │   │   └── maf_threshold_scree.png
-│   │   └── raw_stats-pe_pop3_filt.annotated.tsv
-│   ├── populations.all.annotated
-│   │   ├── plots
-│   │   │   ├── AC_density.png
-│   │   │   └── AN_density.png
-│   │   ├── populations.all.annotated.frq
-│   │   ├── populations.all.annotated.idepth
-│   │   ├── populations.all.annotated.imiss
-│   │   ├── populations.all.annotated.lmiss
-│   │   └── raw_stats-populations.all.annotated.tsv
-│   ├── samples_to_remove.txt
-│   └── vcf_stats.tsv
+│   ├── new.filt
+│   │   ├── new.filt.frq
+│   │   ├── new.filt.idepth
+│   │   ├── new.filt.imiss
+│   │   ├── new.filt.lmiss
+│   │   ├── plots
+│   │   │   ├── AC_density.png
+│   │   │   ├── AF_density.png
+│   │   │   ├── AN_density.png
+│   │   │   ├── ExcHet_density.png
+│   │   │   ├── F_MISSING.png
+│   │   │   ├── idepth_boxplot.png
+│   │   │   ├── imiss_boxplot.png
+│   │   │   ├── lmiss_density.png
+│   │   │   ├── maf_density.png
+│   │   │   └── maf_threshold_scree.png
+│   │   └── raw_stats-new.filt.tsv
+│   ├── new.filt.clean.anno
+│   │   ├── new.filt.clean.anno.frq
+│   │   ├── new.filt.clean.anno.idepth
+│   │   ├── new.filt.clean.anno.imiss
+│   │   ├── new.filt.clean.anno.lmiss
+│   │   └── raw_stats-new.filt.clean.anno.tsv
+│   ├── new.filt.final
+│   │   ├── new.filt.final.frq
+│   │   ├── new.filt.final.idepth
+│   │   ├── new.filt.final.imiss
+│   │   ├── new.filt.final.lmiss
+│   │   └── raw_stats-new.filt.final.tsv
+│   ├── new.raw.anno
+│   │   ├── new.raw.anno.frq
+│   │   ├── new.raw.anno.idepth
+│   │   ├── new.raw.anno.imiss
+│   │   ├── new.raw.anno.lmiss
+│   │   ├── plots
+│   │   │   ├── AC_density.png
+│   │   │   ├── AF_density.png
+│   │   │   ├── AN_density.png
+│   │   │   ├── ExcHet_density.png
+│   │   │   ├── F_MISSING.png
+│   │   │   ├── idepth_boxplot.png
+│   │   │   ├── imiss_boxplot.png
+│   │   │   ├── lmiss_density.png
+│   │   │   ├── maf_density.png
+│   │   │   └── maf_threshold_scree.png
+│   │   └── raw_stats-new.raw.anno.tsv
+│   ├── pe_pop3.annotated
+│   │   ├── pe_pop3.annotated.frq
+│   │   ├── pe_pop3.annotated.idepth
+│   │   ├── pe_pop3.annotated.imiss
+│   │   ├── pe_pop3.annotated.lmiss
+│   │   ├── plots
+│   │   │   ├── AC_density.png
+│   │   │   ├── AF_density.png
+│   │   │   ├── AN_density.png
+│   │   │   ├── ExcHet_density.png
+│   │   │   ├── F_MISSING.png
+│   │   │   ├── idepth_boxplot.png
+│   │   │   ├── imiss_boxplot.png
+│   │   │   ├── lmiss_density.png
+│   │   │   ├── maf_density.png
+│   │   │   └── maf_threshold_scree.png
+│   │   └── raw_stats-pe_pop3.annotated.tsv
+│   ├── pe_pop3_filt.annotated
+│   │   ├── pe_pop3_filt.annotated.frq
+│   │   ├── pe_pop3_filt.annotated.idepth
+│   │   ├── pe_pop3_filt.annotated.imiss
+│   │   ├── pe_pop3_filt.annotated.lmiss
+│   │   ├── plots
+│   │   │   ├── AC_density.png
+│   │   │   ├── AF_density.png
+│   │   │   ├── AN_density.png
+│   │   │   ├── ExcHet_density.png
+│   │   │   ├── F_MISSING.png
+│   │   │   ├── idepth_boxplot.png
+│   │   │   ├── imiss_boxplot.png
+│   │   │   ├── lmiss_density.png
+│   │   │   ├── maf_density.png
+│   │   │   └── maf_threshold_scree.png
+│   │   └── raw_stats-pe_pop3_filt.annotated.tsv
+│   ├── populations.all.annotated
+│   │   ├── plots
+│   │   │   ├── AC_density.png
+│   │   │   └── AN_density.png
+│   │   ├── populations.all.annotated.frq
+│   │   ├── populations.all.annotated.idepth
+│   │   ├── populations.all.annotated.imiss
+│   │   ├── populations.all.annotated.lmiss
+│   │   └── raw_stats-populations.all.annotated.tsv
+│   ├── samples_to_remove.txt
+│   └── vcf_stats.tsv
 └── vcfs
     ├── final.invariants.vcf.gz
     ├── final.invariants.vcf.gz.tbi

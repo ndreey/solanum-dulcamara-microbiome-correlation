@@ -6,9 +6,10 @@ library(paletteer)
 library(pheatmap)
 
 set.seed(1337)
+dir.create("results", showWarnings = FALSE, recursive = TRUE)
 
 # Load in data
-df_piawka <- read_delim("04-piawka/GOR_solanum.piawka-30miss.hudson.tsv", delim = "\t",
+df_piawka <- read_delim("04-piawka/final.merged.tsv", delim = "\t",
                         col_names = T)
 pop_map <- read_delim("doc/uniq_pop_meta.tsv", delim = "\t",
                       col_names = T)
@@ -128,7 +129,7 @@ pheatmap(
   color = rev(paletteer_c("grDevices::Blues", n = 100)),
   display_numbers = F,
   angle_col = 45,
-  filename = "plots/fst_small_heatmap.png")
+  filename = "results/fst_small_heatmap.png")
 
 
 
@@ -158,7 +159,7 @@ pheatmap(
   color = rev(paletteer_c("grDevices::Reds", n = 100)),
   display_numbers = F,
   angle_col = 45,
-  filename = "plots/dxy_small_heatmap.png")
+  filename = "results/dxy_small_heatmap.png")
 
 
 
@@ -190,7 +191,7 @@ composite_df <- composite_matrix %>%
 
 library(writexl)
 # Write to Excel
-write_xlsx(composite_df, "composite_fst_dxy_matrix.xlsx")
+write_xlsx(composite_df, "results/fst_dxy_matrix.xlsx")
 
 
 

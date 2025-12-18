@@ -132,13 +132,13 @@ run_mantel <- function(df, measure_y, measure_x) {
 
 ##### PARAMETERS #####
 set.seed(1337)
-OUTDIR_RIDGE_AMF <- "plots/mantel-overview/ridge-combo-AMF"
-OUTDIR_RIDGE_ITS <- "plots/mantel-overview/ridge-combo-ITS"
-OUTDIR_RIDGE_16S <- "plots/mantel-overview/ridge-combo-16S"
-OUTDIR_MANTEL_TOGETHER <- "plots/mantel-overview/mantel-together"
-OUTDIR_MANTEL_AMF <- "plots/mantel-overview/mantel-AMF"
-OUTDIR_MANTEL_ITS <- "plots/mantel-overview/mantel-ITS"
-OUTDIR_MANTEL_16S <- "plots/mantel-overview/mantel-16S"
+OUTDIR_RIDGE_AMF <- "05-mantel-overview/ridge-combo-AMF"
+OUTDIR_RIDGE_ITS <- "05-mantel-overview/ridge-combo-ITS"
+OUTDIR_RIDGE_16S <- "05-mantel-overview/ridge-combo-16S"
+OUTDIR_MANTEL_TOGETHER <- "05-mantel-overview/mantel-together"
+OUTDIR_MANTEL_AMF <- "05-mantel-overview/mantel-AMF"
+OUTDIR_MANTEL_ITS <- "05-mantel-overview/mantel-ITS"
+OUTDIR_MANTEL_16S <- "05-mantel-overview/mantel-16S"
 
 # Create output directory once
 dir.create(OUTDIR_RIDGE_AMF, showWarnings = FALSE, recursive = TRUE)
@@ -212,7 +212,7 @@ for (TAXA in c("Phylum", "Class", "Order", "Family", "Genus", "Species")) {
   
   counter <- counter + 1
   # Load abundance data
-  abund_16S <- read_delim(paste0("finData/16S_abundance/", TAXA, "_abund.csv"),
+  abund_16S <- read_delim(paste0("data/16S_abundance/", TAXA, "_abund.csv"),
                           delim = ",", col_names = T) %>% 
     rename("taxon" = "...1") %>% 
     filter(taxon != "k__Archaea") %>% 
@@ -220,7 +220,7 @@ for (TAXA in c("Phylum", "Class", "Order", "Family", "Genus", "Species")) {
     column_to_rownames("taxon") %>%
     select(all_of(meta_dulcamara$sampleID))
   
-  abund_ITS <- read_delim(paste0("finData/ITS_abundance/", TAXA, "_abund.csv"),
+  abund_ITS <- read_delim(paste0("data/ITS_abundance/", TAXA, "_abund.csv"),
                           delim = ",", col_names = T) %>% 
     rename("taxon" = "...1") %>% 
     # Filter to only retain S. dulcamara samples
@@ -228,7 +228,7 @@ for (TAXA in c("Phylum", "Class", "Order", "Family", "Genus", "Species")) {
     select(all_of(meta_dulcamara$sampleID))
   
   # AMF data is in different format, wrangle it to match
-  abund_AMF <- read_delim(paste0("finData/AMF_abundance/", TAXA, "_abund.tsv"), 
+  abund_AMF <- read_delim(paste0("data/AMF_abundance/", TAXA, "_abund.tsv"), 
                           delim = "\t", col_names = T, skip = 1) %>% 
     rename("taxon.tmp" = "#OTU ID") %>%
     # Split taxonomy string by semicolon
@@ -408,4 +408,4 @@ mantel_wide <- mantel_summary %>%
   select(taxa, mantel.r_16S, mantel.p_16S, mantel.r_ITS, mantel.p_ITS, 
          mantel.r_AMF, mantel.p_AMF)
 
-write_xlsx(mantel_wide, "plots/mantel-overview/mantel_summary.xlsx")
+write_xlsx(mantel_wide, "05-mantel-overview/mantel_summary.xlsx")
