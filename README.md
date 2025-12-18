@@ -518,22 +518,13 @@ tree . | grep -v "SLURM-"
 │   │   ├── Order_abund.tsv
 │   │   ├── Phylum_abund.tsv
 │   │   └── Species_abund.tsv
-│   ├── ITS_abundance
-│   │   ├── Class_abund.csv
-│   │   ├── Family_abund.csv
-│   │   ├── Genus_abund.csv
-│   │   ├── Order_abund.csv
-│   │   ├── Phylum_abund.csv
-│   │   └── Species_abund.csv
-│   ├── mantel_all_taxa.Rds
-│   ├── mantel_all_taxa.csv
-│   ├── mantel_class.csv
-│   ├── mantel_family.csv
-│   ├── mantel_genus.csv
-│   ├── mantel_order.csv
-│   ├── mantel_phylum.csv
-│   ├── mantel_species.csv
-│   └── master_frames.Rds
+│   └── ITS_abundance
+│       ├── Class_abund.csv
+│       ├── Family_abund.csv
+│       ├── Genus_abund.csv
+│       ├── Order_abund.csv
+│       ├── Phylum_abund.csv
+│       └── Species_abund.csv
 ├── doc
 │   ├── S_dulcamara_popmap_1.txt
 │   ├── S_dulcamara_sample_info_1.txt
