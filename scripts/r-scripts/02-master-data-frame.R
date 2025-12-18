@@ -73,7 +73,7 @@ df_sym <- df_fst %>%
 geo_sym <- geo %>%
   bind_rows(
     geo %>% rename(pop1.id = pop2.id, pop2.id = pop1.id)
-  # Add self-comparisons with 0 distance
+    # Add self-comparisons with 0 distance
   ) %>% 
   bind_rows(
     tibble(
@@ -90,7 +90,7 @@ master_list <- list()
 
 for (TAXA in c("Phylum", "Class", "Order", "Family", "Genus", "Species")) {
   message(paste("Processing master dataframe for", TAXA))
-
+  
   # Load abundance data
   abund_16S <- read_delim(paste0("data/16S_abundance/", TAXA, "_abund.csv"),
                           delim = ",", col_names = T) %>% 
@@ -219,7 +219,7 @@ ggplot(df_plot, aes(x = fst, y = km.diff)) +
 mantel_order <- run_mantel(df_order, "mean_bray.16S", "fst")
 cat("Mantel r =", mantel_order$r, "\n")
 cat("p-value =", mantel_order$p, "\n")
-  
+
 # Summarize across beta-div. 
 beta_div <- c("mean_bray.16S", "mean_bray.ITS", "mean_bray.AMF")
 comparison_results <- data.frame()

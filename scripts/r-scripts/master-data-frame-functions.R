@@ -8,7 +8,7 @@ library(tidyverse)
 # To make the exploration and mantel tests easier.
 #
 
-set.seed(1337)
+#set.seed(1337)
 
 #### FUNCTIONS #####
 # calculates the mean bray-curtis distances 
